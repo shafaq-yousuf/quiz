@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="cont">
+  <div id="questionContainer" class="container">
+    <h1 class="text-center py-5 fw-bold">QUIZ ENTRY PAGE</h1>
+    <div>
+      <div class="text-center ">
+        <textarea name="" id="addQuestion" cols="50" rows="7" class="w-75 p-2" placeholder="Add Question"></textarea>
+      </div>
+      <div class="text-center py-2">
+        <input type="text" placeholder="Add Options" id="addOptions" class="w-75 p-2"> <br><button onclick="addOption()"
+          class="my-2">Add</button>
+      </div>
+      <div>
+        <ol id="optParent">
+
+        </ol>
+      </div>
+      <div class="text-center">
+        <p id="correctAnswer" class="bg-success">Correct Answer</p>
+      </div>
+      <div class="text-center py-2">
+        <button class="bg-primary p-2 rounded fw-bold" onclick="submitQuestion()">Submit</button>
+      </div>
+    </div>
+  </div>
+<div style="display: none;" id="loaderImage">
+  <img src="https://www.freeiconspng.com/thumbs/load-icon-png/load-icon-png-8.png" alt="" width="100%">
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="module" src="quizapp.js"></script>
+</body>
+
+</html>
